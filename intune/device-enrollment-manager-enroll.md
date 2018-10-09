@@ -45,7 +45,7 @@ Only users in the [Azure portal](https://portal.azure.com) can be device enrollm
 
 The DEM user can:
 
--   Enroll up to 1000 devices in Intune
+-   Enroll unlimited devices in Intune
 -   Sign in to the Company Portal to get company apps
 -   Configure access to company data by deploying role-specific apps to the tablets
 
@@ -67,6 +67,11 @@ Devices that are enrolled with a device enrollment manager account have the foll
 > You can deploy company apps to devices that are managed by the device enrollment manager. Deploy the Company Portal app as a **Required Install** to the device enrollment manager's user account.
 > To improve performance, viewing the Company Portal app on a DEM device shows only the local device. Remote management of other DEM devices can only be done from the Intune admin console.
 
+## Change DEM device limit number
+
+1. In Azure Active Directory, choose **Devices** > **Device Settings**. Change the number of devices next to **Maximum number of devices per user**
+
+2. To apply device restrictions for all other users, go to [Intune in the Azure portal](https://aka.ms/intuneportal) and choose **Device Enrollment** > **Enrollment restrictions** and configure your limits.
 
 ## Add a device enrollment manager
 
